@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Subscribing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000 0%, #1e3a8a 100%);
+            min-height: 100vh;
+        }
+        .card {
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        .download-btn {
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center p-4">
+    <div class="card max-w-2xl w-full p-8 md:p-12 text-center text-white">
+        <div class="mb-8">
+            <i class="fas fa-check-circle text-6xl text-green-400 mb-4"></i>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Thank You for Subscribing!</h1>
+            <p class="text-lg opacity-90 mb-6"></p>
+        </div>
+
+        <div class="mb-8">
+    <h2 class="text-xl font-semibold mb-4">What's next?</h2>
+    <div class="space-y-4 text-left max-w-md mx-auto">
+        <div class="flex items-start">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Google_Sheets_2020_Logo.svg/512px-Google_Sheets_2020_Logo.svg.png" alt="Google Sheets Logo" class="w-6 h-6 mt-1 mr-3">
+            <p>Download and open the spreadsheet to start your valuation</p>
+        </div>
+        <!-- Added "Need help?" section -->
+        <div class="flex items-start">
+            <i class="fas fa-question-circle text-yellow-300 mt-1 mr-3"></i>
+            <p>Need help? Reply to the email and we'll assist you</p>
+        </div>
+    </div>
+</div>
+
+        <div class="mb-8">
+            <h3 class="text-lg font-medium mb-4">Can't find the email?</h3>
+            <a href="https://docs.google.com/spreadsheets/d/1VkW-M3IZ10i-7Y_G01_WL3uvYT_ZasPT3JpiwddVl1A/edit?pli=1&scrlybrkr=6b2be4b0&gid=0#gid=0" 
+               target="_blank"
+               class="download-btn inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg">
+                <i class="fas fa-download mr-2"></i> Download Spreadsheet Directly
+            </a>
+        </div>
+
+        <div class="text-sm opacity-80">
+            <p>By using this spreadsheet, you agree to our <a href="#" class="text-blue-300 hover:underline">Terms of Service</a> and <a href="#" class="text-blue-300 hover:underline">Privacy Policy</a>.</p>
+            <p class="mt-2">© 2023 Valuation Tools. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        // You can add any JavaScript functionality here if needed
+        document.querySelector('.download-btn').addEventListener('click', function() {
+            // Track download event if needed
+            console.log('Direct download initiated');
+        });
+    </script>
+</body>
+</html>
